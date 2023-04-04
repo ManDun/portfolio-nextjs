@@ -1,6 +1,8 @@
 import React from "react";
 import egsapp from "../public/images/projects/egsapp.png";
 import tcmwp from "../public/images/projects/tcmwp.png";
+import mansoft from "../public/images/projects/mansoft.png";
+import manascodes from "../public/images/projects/manascodes.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -21,7 +23,7 @@ const Projects = () => {
           />
           <ProjectItem
             title="Mansoft"
-            backgroundImg={egsapp}
+            backgroundImg={mansoft}
             projectUrl="/egsapp"
             tech="Python Django"
           />
@@ -33,7 +35,7 @@ const Projects = () => {
           />
           <ProjectItem
             title="EGS App"
-            backgroundImg={egsapp}
+            backgroundImg={manascodes}
             projectUrl="/egsapp"
             tech="Python Django"
           />
