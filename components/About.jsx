@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import aboutimage from "@/public/images/about.jpg";
 
 const About = () => {
   return (
-    <div className="w-full md:h-screen p-2 flex items-center py-16">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+          <p className="uppercase text-xl tracking-widest text-[#276778]">
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
@@ -29,20 +30,14 @@ const About = () => {
             Lead and trained teams to deliver successful enterprise
             applications. Established CoE for Automation
           </p>
-          <Link href="/">
+          <Link href="/#projects">
             <p className="py-2 text-gray-600 underline cursor-pointer">
               Checkout my latest projects.
             </p>
           </Link>
         </div>
-        <div className="w-full h-auto m-auto shadow-lg shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image
-            src="/images/about.jpg"
-            className="rounded-xl"
-            alt="/"
-            width="400"
-            height="400"
-          />
+        <div className="w-full h-auto m-auto shadow-lg shadow-gray-400 rounded-md flex items-center justify-center p-4 hover:scale-105 ease-in duration-300 bg-white">
+          <Image src={aboutimage} className="rounded-md" alt="/" />
         </div>
       </div>
     </div>

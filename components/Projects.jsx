@@ -7,9 +7,9 @@ import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
   return (
-    <div className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="uppercase text-xl tracking-widest text-[#5651e5]">
+    <div id="projects" className="w-full lg:h-screen p-2">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+        <p className="uppercase text-xl tracking-widest text-[#276778]">
           Projects
         </p>
         <h2 className="py-4">What I have built</h2>
@@ -24,19 +24,19 @@ const Projects = () => {
           <ProjectItem
             title="Mansoft"
             backgroundImg={mansoft}
-            projectUrl="/egsapp"
+            projectUrl="/mansoft"
             tech="Python Django"
           />
           <ProjectItem
-            title="Wordpress Blog"
+            title="That Code Monk"
             backgroundImg={tcmwp}
-            projectUrl="/egsapp"
+            projectUrl="/codemonk"
             tech="Wordpress"
           />
           <ProjectItem
-            title="EGS App"
+            title="ManasCodes"
             backgroundImg={manascodes}
-            projectUrl="/egsapp"
+            projectUrl="/manascodes"
             tech="Python Django"
           />
         </div>

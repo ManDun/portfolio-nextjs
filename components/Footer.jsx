@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-50">
+    <footer className="bg-slate-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="py-16">
           <div className="flex gap-x-6 justify-center items-center">

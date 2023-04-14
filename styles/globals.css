@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply bg-gradient-to-r from-[#d8e8ec] to-[#e6ebec] text-[#1f2937] tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -19,11 +20,15 @@ html {
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+    @apply text-4xl sm:text-5xl md:text-6xl
   }
 
   h2 {
     @apply text-3xl sm:text-4xl
+  }
+
+  p {
+    @apply text-lg  md:text-xl
   }
   
   li {
@@ -31,6 +36,6 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+    @apply drop-shadow-lg shadow-gray-400 rounded-md uppercase bg-gradient-to-r from-[#276778] to-[#4596a8] text-white
   }
 }

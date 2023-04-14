@@ -6,14 +6,14 @@ import Link from "next/link";
 
 const Main = () => {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600">
             Lets build something new
           </p>
           <h1 className="py-4 text-gray-700">
-            Hi, I'm <span className="text-[#5651e5]">Manas</span>
+            Hi, I'm <span className="text-[#276778]">Manas</span>
           </h1>
           <h1 className="py-4 text-gray-700">An Architect and Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
