@@ -5,6 +5,7 @@ import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
+import logo from "@/public/images/logo.png";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -56,10 +57,10 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
-          src="/images/profile.jpg"
+          src={logo}
           className="rounded-full shadow-lg shadow-gray-400"
-          width="50"
-          height="50"
+          width="60"
+          height="60"
           alt="/"
         />
         <div>
@@ -109,7 +110,7 @@ const Navbar = () => {
               <div className="flex w-full items-center justify-between">
                 <Image
                   className="rounded-full shadow-lg shadow-gray-400"
-                  src="/images/profile.jpg"
+                  src={logo}
                   width="70"
                   height="70"
                   alt="/"
@@ -150,7 +151,7 @@ const Navbar = () => {
                   </li>
                 </Link>
                 <Link href="https://blog.manasconsults.net" target="_blank">
-                  <li className="ml-10 text-sm uppercase hover:border-b">
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
                     Blogs
                   </li>
                 </Link>
@@ -161,7 +162,7 @@ const Navbar = () => {
                 </Link>
               </ul>
               <div className="pt-40">
-                <p className="uppercase tracking-widest text-[#5651e5]">
+                <p className="uppercase tracking-widest text-[#276778]">
                   Let's Connect
                 </p>
                 <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
