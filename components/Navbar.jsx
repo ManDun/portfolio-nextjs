@@ -25,7 +25,7 @@ const Navbar = () => {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
-      setNavBg("#e6ebec");
+      setNavBg("linear-gradient(to right, #a3e1ef, #e6ebec)");
       setLinkColor("#1f2937");
     }
   }, [router]);
@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
+      style={{ background: `${navBg}` }}
       className={
         shadow
           ? "fixed w-full h-20 shadow-lg z-[100] ease-in-out duration-300"
@@ -123,9 +123,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="border-b border-gray-300 my-4">
-                <p className="w-[85%] md:w-[90%] py-4">
-                  Lets build something great here!!
-                </p>
+                <p className="w-[85%] md:w-[90%] py-4">It all starts here!!!</p>
               </div>
             </div>
             <div className="py-4 flex flex-col">

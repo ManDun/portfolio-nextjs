@@ -12,7 +12,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-gradient-to-r from-[#d8e8ec] to-[#e6ebec] text-[#1f2937] tracking-wide
+    @apply bg-gradient-to-r from-[#a3e1ef] to-[#e6ebec] text-[#1f2937] tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -37,5 +37,9 @@ html {
 
   button {
     @apply drop-shadow-lg shadow-gray-400 rounded-md uppercase bg-gradient-to-r from-[#276778] to-[#4596a8] text-white
+  }
+
+  .nav-bg {
+    @apply bg-gradient-to-r from-[#d8e8ec] to-[#e6ebec] text-[#1f2937] tracking-wide
   }
 }
