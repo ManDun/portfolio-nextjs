@@ -25,7 +25,7 @@ const Navbar = () => {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
-      setNavBg("linear-gradient(to right, #b6e3ec, #e6ebec)");
+      setNavBg("linear-gradient(to right, #b6e3ec, #b6e3ec)");
       setLinkColor("#1f2937");
     }
   }, [router]);

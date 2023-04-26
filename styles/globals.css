@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900;1000&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -12,7 +13,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-gradient-to-r from-[#b6e3ec] to-[#e6ebec] text-[#1f2937] tracking-wide
+    @apply text-[#1f2937] tracking-wide
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -41,5 +42,25 @@ html {
 
   .nav-bg {
     @apply bg-gradient-to-r from-[#d8e8ec] to-[#e6ebec] text-[#1f2937] tracking-wide
+  }
+
+  .main-bg {
+    @apply bg-gradient-to-b from-[#b6e3ec] to-slate-100 text-[#1f2937] tracking-wide
+  }
+
+  .about-bg {
+    @apply bg-slate-100 text-[#1f2937] tracking-wide
+  }
+
+  .skills-bg {
+    @apply bg-slate-100 text-[#1f2937] tracking-wide
+  }
+
+  .projects-bg {
+    @apply bg-slate-100 text-[#1f2937] tracking-wide
+  }
+
+  .contact-bg {
+    @apply bg-slate-100 text-[#1f2937] tracking-wide
   }
 }

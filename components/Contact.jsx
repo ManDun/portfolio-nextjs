@@ -9,7 +9,7 @@ import ContactImg from "../public/images/contact.jpg";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full lg:h-screen p-2">
+    <div id="contact" className="w-full lg:h-screen p-2 contact-bg">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="uppercase text-xl tracking-widest text-[#276778]">
           Contact
@@ -27,14 +27,18 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <h2 className="py-2">Manas Mallick</h2>
-                <p>Consultant, Architect, Developer</p>
-                <p className="py-4">
+                <h2 className="pt-4 text-center">Manas Mallick</h2>
+                <p className="text-center text-gray-600 text-lg">
+                  Consultant, Architect, Developer
+                </p>
+                <p className="py-4 text-center">
                   I am available for freelance. Contact me and let&apos;s talk.
                 </p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
+                <p className="uppercase pt-8 text-center text-sm">
+                  Connect With Me
+                </p>
                 <div className="flex items-center justify-between py-4">
                   <Link
                     href="https://www.linkedin.com/in/manas-mallick-77781431/"
