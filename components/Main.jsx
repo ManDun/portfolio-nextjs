@@ -44,9 +44,15 @@ const Main = () => {
                 <FaGithub />
               </div>
             </Link>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-              <AiOutlineMail />
-            </div>
+            <Link
+              href="mailto:manasm.dev@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                <AiOutlineMail />
+              </div>
+            </Link>
             <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
               <BsFillPersonLinesFill />
             </div>
